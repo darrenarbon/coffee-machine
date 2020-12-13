@@ -1,0 +1,5 @@
+<button class="btn" [ngClass]="(selectedDrink && buttonName === selectedDrink.name) ? 'btn-success': 'btn-primary'">
+    <img [src]="buttonIcon" class="button-icon">
+    <div>{{buttonName}}</div>
+</button>
+<div [ngClass]="{'selector': (selectedDrink && buttonName === selectedDrink.name)}"></div>

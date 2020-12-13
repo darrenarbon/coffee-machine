@@ -1,0 +1,8 @@
+<div class="row justify-content-center" *ngIf="currentDrink">
+    <div class="col-12 p-2 text-center drink-steps">
+      <h4>Steps to make</h4>
+      <div *ngFor="let step of currentDrink.steps; index as i">{{i+1}}. {{step}}</div>
+
+      <button class="btn btn-danger mt-5" (click)="newDrink()">Make A Different Drink</button>
+    </div>
+</div>

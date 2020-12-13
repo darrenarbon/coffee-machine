@@ -1,0 +1,5 @@
+<div class="row mt-5 justify-content-center">
+    <div class="col-4 text-center" *ngFor="let drink of availableDrinks" >
+      <app-hot-drink-button [buttonName]="drink.name" [buttonIcon]="drink.icon" (click)="makeDrink(drink)"></app-hot-drink-button>
+    </div>
+</div>
